@@ -1,0 +1,81 @@
+	/*CSS Reset*/
+	* {
+		padding: 0;
+		margin: 0;
+}
+
+
+
+	header {
+		text-align: center;
+		border-bottom: 1px solid lightgrey;
+		margin-bottom: 20px;
+}
+
+	body {
+		font-family: "Times New Roman";
+		color: white;
+		background: grey;
+		padding: 20px;
+		border: 3px solid lightgrey;
+		margin: 20px;
+		width: 600px;
+}
+
+	a {
+		color: #57C78A;
+}
+
+	h1,
+	h2,
+	ul {
+		font-family: arial;
+}
+	h1 {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	ul {
+		margin: 20px;
+	}
+
+	header p {
+		font-size: 24px;
+		font-style: italic;
+		font-weight: bold;
+		margin-bottom: 20px;
+
+}
+
+	footer {
+		text-align: center;
+		border-top: 1px solid lightgrey;
+		margin-top: 20px;	
+}
+
+	li {
+		display: inline;
+		border-right: 1px solid lightgrey;
+		padding-right: 5px;
+		margin-right: 5px; 
+}
+
+	li: last-child {
+		border-right: none; 
+	}
+	
+	p {
+		margin-bottom: 20px;
+}
+
+	img {
+		float: right;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		border: 1px solid lightgrey;
+		padding: 3px;
+
+}
+
+	

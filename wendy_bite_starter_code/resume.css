@@ -1,0 +1,41 @@
+	/*CSS Reset*/
+	* {
+		padding: 0;
+		margin: 0;
+}
+
+	body {
+		background: grey;
+		padding: 20px;
+		border: 3px solid lightgrey;
+		margin: 20px;
+		width: 600px;
+
+}
+
+}
+
+	header {
+		text-align: center;
+}
+
+	footer {
+		text-align: center;	
+}
+
+	li {
+		display: inline;
+}
+
+	img {
+		float: right;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		border: 1px solid lightgrey;
+		padding: 3px;
+
+}
+
+	footer {
+		text-align: center;	
+}

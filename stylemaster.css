@@ -1,0 +1,27 @@
+
+
+body {
+	background: rgba(221,248,246,1);
+	background-size: cover;
+	background-position: center;
+	font-family: 'Orbitron', sans-serif;
+	text-align: left;
+	
+
+}
+
+h1, h2 {
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 24px;
+	background: hsl(0, 50%, 45%);
+	text-shadow: 	1px 1px black, 2px 2px black,
+					3px 3px black, 4px 4px black,
+					5px 5px black, 6px 6px black,
+					7px 7px black, 8px 8px black,;
+	text-align: center;
+	margin-right:200px;
+	margin-left: 200px;	
+	border: 1px solid white;
+}
+
