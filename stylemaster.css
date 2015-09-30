@@ -1,27 +1,36 @@
 
 
 body {
-	background: rgba(221,248,246,1);
-	background-size: cover;
-	background-position: center;
+	background: rgba(252,234,187,1);
 	font-family: 'Orbitron', sans-serif;
 	text-align: left;
-	
-
+	border-bottom: 2px solid white;
 }
 
-h1, h2 {
+
+h1, h2, p {
 	color: white;
 	font-family: 'Orbitron', sans-serif;
 	font-size: 24px;
 	background: hsl(0, 50%, 45%);
-	text-shadow: 	1px 1px black, 2px 2px black,
-					3px 3px black, 4px 4px black,
-					5px 5px black, 6px 6px black,
-					7px 7px black, 8px 8px black,;
+	text-shadow: 1px 1px black, 2px 2px black,
+				 3px 3px black, 4px 4px black,
+				 5px 5px black, 6px 6px black,
+				 7px 7px black, 8px 8px black,;
 	text-align: center;
 	margin-right:200px;
 	margin-left: 200px;	
-	border: 1px solid white;
+	border: 2px solid white;
+	border-radius: 20px ;
 }
 
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black ;
+  background-color: red ;
+}
