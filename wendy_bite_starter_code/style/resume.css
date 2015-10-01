@@ -40,7 +40,7 @@
 		margin: 20px;
 	}
 
-	header p {
+	header p{
 		font-size: 24px;
 		font-style: italic;
 		font-weight: bold;
@@ -76,6 +76,11 @@
 		border: 1px solid lightgrey;
 		padding: 3px;
 
+}
+
+div {
+	display: block;
+	
 }
 
 	
