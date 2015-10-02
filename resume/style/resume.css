@@ -12,7 +12,7 @@ body {
 	     padding: 0px;
 	     background: lightgrey;
 	     opacity: 0.55;
-	     border-radius: 20%;
+	     border-radius: 40%;
 	     text-align: center;
 	   }
 	   li {
@@ -49,8 +49,7 @@ body {
 	}
 
 	.headshot {
-		display: block;
-		border:#756a60 2px solid;
+		border-radius: 20px;
 		margin: auto;
 	}
 
