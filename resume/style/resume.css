@@ -4,15 +4,19 @@
 body {
 	background-position: center;
 	text-align: center;
-	color: red;
 	font-family: helvetica;
+	border-style: dotted;
+	border-color: grey;
+	border: 10px, 10px, 10px, 10px;
+	padding: 5px, 5px, 5px, 5px;
 	}
 
 	ul {
 	     padding: 0px;
 	     background: lightgrey;
 	     opacity: 0.55;
-	     border-radius: 40%;
+	     margin-left: 10px;
+	     margin-right: 10px;
 	     text-align: center;
 	   }
 	   li {
@@ -29,20 +33,14 @@ body {
 
 	h1 {
 		padding: 20px;
-		font-size: 78px
-		color: white;
-			text-shadow:
-			   -1px -1px 0 #000,
-			   1px -1px 0 #000,
-			   -1px 1px 0 #000,
-			   1px 1px 0 #000;
+		font-size: 48px;
 		
 	}
 
 	h2 {
 		padding: 20px;
-		color: black;
-		font-size: 78px;
+		color: white;
+		font-size: 48px;
 		/*cool outline effect*/
 		text-shadow:
 		   -1px -1px 0 #000,
@@ -52,6 +50,10 @@ body {
 	}
 
 	h3 {
+		text-decoration: underline;
+		color: grey;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		font-size: 24px;
 	}
 
@@ -70,8 +72,14 @@ body {
 		font-size; 18px;
 	}
 
+
 	p {
+		font-size: 18px;
+		font-weight: normal;
 		color: black;
+		text-align: justify;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	li {
