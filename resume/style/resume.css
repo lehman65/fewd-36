@@ -27,18 +27,21 @@ body {
 		text-align: center;
 }
 
-	footer {
-		text-align: center;	
-}
-
 	h1 {
+		padding: 20px;
+		font-size: 78px
 		color: white;
-
+			text-shadow:
+			   -1px -1px 0 #000,
+			   1px -1px 0 #000,
+			   -1px 1px 0 #000,
+			   1px 1px 0 #000;
+		
 	}
 
 	h2 {
 		padding: 20px;
-		color: white;
+		color: black;
 		font-size: 78px;
 		/*cool outline effect*/
 		text-shadow:
@@ -48,9 +51,27 @@ body {
 		   1px 1px 0 #000;
 	}
 
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
 	.headshot {
-		border-radius: 20px;
+		
 		margin: auto;
+	}
+
+	.info {
+		display: inline-block;
+		color: black;
+		font-size; 18px;
+	}
+
+	p {
+		color: black;
 	}
 
 	li {
