@@ -2,7 +2,6 @@
 
 
 body {
-	background-color: azure;
 	background-position: center;
 	text-align: center;
 	font-family: helvetica;
@@ -76,7 +75,7 @@ body {
 
 	p {
 		border: 10px solid hsla(0, 0%, 100%, .5);
-		background: blue;
+		background: rgba(163,163,163, .5);
 		background-clip: padding-box;
 		background-size: 50% 50%;
 		background-repeat: no repeat;
