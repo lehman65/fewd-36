@@ -9,6 +9,12 @@ body{
 	background-color: rgb(240, 240, 216);
 	font-family: helvetica;	
 }
+
+.flexbox-container {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
 /*section {
 	display: flex;
 	align-items: stretch;
@@ -17,21 +23,32 @@ body{
 	
 }*/
 article, p, {
-	flex: 1;
+	
 	
 	margin-left: 20px;
 
 	
 }
 
-li {
+
+ul, ol, li {
 	margin-left: 20px;
-	
 }
 
 
 
-header {
+.header {
+
+	display: inline-flex;
+	align-content: center;
+	list-style-type: none;
+	
+}
+
+.subheader {
+	display: inline-flex;
+	align-items: ;
+	list-style-type: none;
 
 }
 
