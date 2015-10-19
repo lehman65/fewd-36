@@ -34,24 +34,27 @@
     <script type="text/javascript" src="interface.js"></script>
     <script type="text/javascript">
       // Your code goes here!
-      function convertCtoF(c) {
-        f = c * 9/5 + 32;
-        return = f;
+
+      function calcCelciusToFahrenheit(tempC) {
+        tempF = tempC * 9/5 + 32;
+          return = tempF;
       }
 
-      function convertFtoC(f) {
-        c = (f-32) * (9/5);
-        return = c;
+      function calcFahrenheitToCelcius(tempF) {
+        tempC = (tempF-32) * (5/9);
+          return tempC;
       } 
 
-      function triangleArea(a, b){
-        t = (a * b) / 2;
-        return t;
+      function calcLongestSide(pyA, pyB) {
+        pyC = Math.sqrt((pyA*pyA) + (pyB*pyB));
+          return pyC;
       }
 
-      function circum(r) {
-        c = 2 * 3.14 * r;
-        return c;
+      function calcCircumference(r) {
+        c = 2 * Math.PI * r;
+          return c;
+       }
+        
     </script>
   </body>
 </html>
