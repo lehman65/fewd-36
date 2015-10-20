@@ -55,8 +55,8 @@ function calcFtoC(event) {
 
 function calcFahrenheitToCelcius(tempF) {
   tempC = (tempF-32) * (5/9);
-    return tempC;
-} 
+    return Math.round(tempC);
+}
 
 function calcCtoF(event) {
   if (tempC.value.length > 0) {
@@ -68,5 +68,5 @@ function calcCtoF(event) {
 
 function calcCelciusToFahrenheit(tempC) {
   tempF = tempC * 9/5 + 32;
-    return = tempF;
+    return  Math.roud(tempF);
 }
