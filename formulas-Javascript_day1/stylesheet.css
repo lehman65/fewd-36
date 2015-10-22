@@ -5,8 +5,13 @@ body {
   font-family: Arial;
   font-size: 20px;
   line-height: 30px;
+  margin: 10px
 }
 h1 {
+  font-size: 34px;
+  text-align: center;
+}
+h2 {
   font-size: 20px;
 }
 input {
