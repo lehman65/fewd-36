@@ -14,7 +14,7 @@ function calcPy(event) {
 }
 
 function calcLongestSide(pyA, pyB) {
-       pyC = (pyA * pyB) / 2;
+       var pyC = (pyA * pyB) / 2;
          return Math.round(pyC);
      }
 
@@ -28,7 +28,7 @@ r.addEventListener('keyup', calcC);
 
 function calcC(event) {
   if (r.value.length > 0) {
-    c.value = calcCircumference(r.value)
+     c.value = calcCircumference(r.value)
   } else {
     c.value = '';
   }
@@ -54,7 +54,7 @@ function calcFtoC(event) {
 }
 
 function calcFahrenheitToCelcius(tempF) {
-  tempC = (tempF-32) * 5/9;
+  var tempC = (tempF-32) * (5/9);
     return Math.round(tempC);
 }
 
@@ -67,6 +67,6 @@ function calcCtoF(event) {
 }
 
 function calcCelciusToFahrenheit(tempC) {
-  tempF = tempC * 9/5 + 32;
+  var tempF = tempC * 9/5 + 32;
     return  Math.round(tempF);
 }
