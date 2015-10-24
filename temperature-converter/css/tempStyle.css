@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+
+
+body {
+	background-image: url("vampire-bat-icon.jpg");
+	background-blend-mode: color-dodge;
+	background-position: center;
+	background-size: 100px, 100px;
+	font-family: Helvetica;
+	text-align: center;
+
+}
+
+
+header {
+	background-image: url("tombstone.jpg");
+
+	border: 10px solid silver;
+	border-style: ridge;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h1 {
+	font-family: creepster;
+	color: red;		
+	text-shadow: 
+	1px 1px black, 2px 2px black, 
+	3px 3px black, 4px 4px black, 
+	5px 5px black, 6px 6px black, 
+	7px 7px black, 8px 8px black,;
+	font-size: 48px;
+	
+}
+
+
+h2 {
+	font-family: creepster;
+	color: #ff6918;
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+
+.jack
+ 	    {
+ 	        position: center, relative;
+ 	        width: 1350px;
+ 	        margin: 0, 200px, 0, 200px;
+ 	        border: 0 0 0 0;
+ 	       
+ 	        		
+ 	       
+ 	    }
+ 		
+ 
+
+
+
+#stem {
+	width: 80px;
+	height: 100px;
+	background: #006600;
+	border-radius: 10px;
+	transform: skew(20deg);
+	border: 2px solid black;
+	margin:0px auto;
+	position: relative;
+
+}
+
+.pumpkin {
+	width: 650px;
+	height: 600px;
+	background: #ff6918;
+	border-radius: 43%;
+	border: 2px solid black;
+	margin: 0px auto;
+}
+
+#leftEye {
+	width: 150px;
+	  height: 150px;
+	  background: #fff900;
+	 margin: 0px auto;
+	  border-radius: 60px;
+	  
+	 margin-top: -500px;
+	 position: relative;
+	 left: 150px;
+
+
+}
+
+#rightEye {
+	width: 150px;
+	  height: 150px;
+	  background: #fff900;
+	 margin: 0px auto;
+	 margin-top: -150px;
+	
+	  border-radius: 60px;
+	  position: relative;
+	  right: 150px;
+
+}
+
+#nose {
+	width: 0;
+	  height: 0;
+
+	  border-bottom: 120px solid #fff900;
+	  border-left: 60px solid transparent;
+	  border-right: 60px solid transparent;
+	  position: relative;
+	  margin-top: -20px;
+	  left: 610px;
+	  right: 610px;
+
+}
+
+
+
+#tooth1 {
+
+	height: 0;
+	   width: 450px;
+	   border-bottom: 60px solid #fff900;
+	   border-left: 5px solid transparent;
+	   border-right: 5px solid transparent;
+	   margin-top: 80px;
+	   position: relative;
+	   left: 445px;
+	   right: 445px;
+
+}
+
+#tooth2 {
+	height: 0;
+	   width: 60px;
+	   border-bottom: 60px solid #fff900;
+	   border-left: 5px solid transparent;
+	   border-right: 5px solid transparent;
+	   margin-top: -110px;
+	   position: relative;
+	   left: 831px;
+	   right: 831px;
+}
+
+#tooth3 {
+	height: 0;
+	   width: 60px;
+	   border-bottom: 60px solid #fff900;
+	   border-left: 5px solid transparent;
+	   border-right: 5px solid transparent;
+	   margin-top: -60px;
+	   position: relative;
+	   left: 449px;
+	   right: 449px;
+}
+
+#tooth4 {
+	height: 0;
+	   width: 120px;
+	   border-bottom: 60px solid #fff900;
+	   border-left: 5px solid transparent;
+	   border-right: 5px solid transparent;
+	   margin-top: -60px;
+	   position: relative;
+	   left: 610px;
+	   right: 610px;
+}
