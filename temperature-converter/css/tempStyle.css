@@ -2,31 +2,39 @@
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
-	box-sizing: border-box;
+	
+	
 }
-
-
 
 body {
-	background-image: url("vampire-bat-icon.jpg");
-	background-blend-mode: color-dodge;
-	background-position: center;
-	background-size: 100px, 100px;
+	background-image: url("graveyard-4.jpg");
+	background-size: 150%;
 	font-family: Helvetica;
 	text-align: center;
-
 }
 
-
-header {
-	background-image: url("tombstone.jpg");
-
+#header {
+	background-image: url("stone_texture.jpg");
 	border: 10px solid silver;
 	border-style: ridge;
 	border-radius: 10px;
-	margin-top: 20px;
-	margin-left: 100px;
-	margin-right: 100px;
+	padding: 5px 0 0 5px;
+	margin-top: 5px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-bottom: 30px;
+}
+
+#footer {
+	background-image: url("stone_texture.jpg");
+	border: 10px solid silver;
+	border-style: ridge;
+	border-radius: 10px;
+	padding-bottom:5px;
+	margin-top:175px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-bottom: 5px;
 }
 
 h1 {
@@ -38,144 +46,198 @@ h1 {
 	5px 5px black, 6px 6px black, 
 	7px 7px black, 8px 8px black,;
 	font-size: 48px;
-	
 }
-
 
 h2 {
 	font-family: creepster;
-	color: #ff6918;
+	color: black;
 	font-size: 24px;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-
 
 .jack
- 	    {
- 	        position: center, relative;
- 	        width: 1350px;
- 	        margin: 0, 200px, 0, 200px;
- 	        border: 0 0 0 0;
- 	       
- 	        		
- 	       
- 	    }
- 		
- 
-
-
-
-#stem {
-	width: 80px;
-	height: 100px;
-	background: #006600;
-	border-radius: 10px;
-	transform: skew(20deg);
-	border: 2px solid black;
-	margin:0px auto;
-	position: relative;
+{
+	position: center;
+	width: 1335px;
+	height: 0; 
 
 }
 
-.pumpkin {
-	width: 650px;
-	height: 600px;
-	background: #ff6918;
+#pumpkin {
+	width: 600px;
+	height: 450px;
+	background-image: url("pumkin-skin.jpg");
 	border-radius: 43%;
-	border: 2px solid black;
+	box-shadow: brown 0px 6px 4px, 
+	inset brown 0px 4px 6px;
 	margin: 0px auto;
+	position: relative;
 }
 
 #leftEye {
-	width: 150px;
-	  height: 150px;
-	  background: #fff900;
-	 margin: 0px auto;
-	  border-radius: 60px;
-	  
-	 margin-top: -500px;
-	 position: relative;
-	 left: 150px;
+	width: 100px;
+	height: 100px;
+	background: #fff900;
+	margin: 0px auto;
+	border-radius: 60px;
+	margin-top: -350px;
+	position: relative;
+	left: 150px;
+}
 
-
+#leftEye2 {
+	width: 100px;
+	height: 100px;
+	background: #800909;
+	margin: 0px auto;
+	border-radius: 60px;
+	margin-top: -100px;
+	position: relative;
+	left: 135px;
 }
 
 #rightEye {
-	width: 150px;
-	  height: 150px;
-	  background: #fff900;
-	 margin: 0px auto;
-	 margin-top: -150px;
-	
-	  border-radius: 60px;
-	  position: relative;
-	  right: 150px;
+	width: 100px;
+	height: 100px;
+	background: #fff900;
+	margin: 0px auto;
+	margin-top: -95px;
+	border-radius: 60px;
+	position: relative;
+	right: 150px;
+
+}
+
+#rightEye2 {
+	width: 100px;
+	height: 100px;
+	background: #800909;
+	margin: 0px auto;
+	margin-top: -100px;
+	border-radius: 60px;
+	position: relative;
+	right: 165px;
 
 }
 
 #nose {
 	width: 0;
-	  height: 0;
-
-	  border-bottom: 120px solid #fff900;
-	  border-left: 60px solid transparent;
-	  border-right: 60px solid transparent;
-	  position: relative;
-	  margin-top: -20px;
-	  left: 610px;
-	  right: 610px;
-
+	height: 0;
+	border-bottom: 140px solid #fff900;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	position: relative;
+	margin: 0px auto;
+	margin-top: -100px;
+	left: -5px;
 }
 
-
+#nose2{
+	width: 0;
+	height: 0;
+	border-bottom: 120px solid #800909;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	position: relative;
+	margin: 0px auto;
+	margin-top: -120px;
+	left: -15px;
+}
 
 #tooth1 {
-
 	height: 0;
-	   width: 450px;
-	   border-bottom: 60px solid #fff900;
-	   border-left: 5px solid transparent;
-	   border-right: 5px solid transparent;
-	   margin-top: 80px;
-	   position: relative;
-	   left: 445px;
-	   right: 445px;
+	width: 400px;
+	border-bottom: 60px solid #fff900;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: 60px;
+	position: relative;
+	left: 0px;
+}
 
+#tooth1Shadow {
+	height: 0;
+	width: 384.25px;
+	border-bottom: 60px solid #800909;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: -60px;
+	position: relative;
+	left: -10px;
 }
 
 #tooth2 {
 	height: 0;
-	   width: 60px;
-	   border-bottom: 60px solid #fff900;
-	   border-left: 5px solid transparent;
-	   border-right: 5px solid transparent;
-	   margin-top: -110px;
-	   position: relative;
-	   left: 831px;
-	   right: 831px;
+	width: 60px;
+	border-bottom: 60px solid #fff900;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: -119px;
+	position: relative;
+	left: -155px;
+}
+
+#tooth2Shadow {
+	height: 0;
+	width: 60px;
+	border-bottom: 60px solid #800909;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: -60px;
+	position: relative;
+	left: -167px;
 }
 
 #tooth3 {
 	height: 0;
-	   width: 60px;
-	   border-bottom: 60px solid #fff900;
-	   border-left: 5px solid transparent;
-	   border-right: 5px solid transparent;
-	   margin-top: -60px;
-	   position: relative;
-	   left: 449px;
-	   right: 449px;
+	width: 60px;
+	border-bottom: 60px solid #fff900;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: -60px;
+	position: relative;
+	left: 165px;
+}
+
+#tooth3Shadow {
+	height: 0;
+	width: 60px;
+	border-bottom: 60px solid #800909;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: -60px;
+	position: relative;
+	left: 147px;
 }
 
 #tooth4 {
 	height: 0;
-	   width: 120px;
-	   border-bottom: 60px solid #fff900;
-	   border-left: 5px solid transparent;
-	   border-right: 5px solid transparent;
-	   margin-top: -60px;
-	   position: relative;
-	   left: 610px;
-	   right: 610px;
+	width: 120px;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid #fff900;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: -80px;
+	position: relative;
+	left: 0px;
+}
+
+#tooth4Shadow {
+	height: 0;
+	width: 120px;
+	border-bottom: 40px solid #800909;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	margin: 0px auto;
+	margin-top: -40px;
+	position: relative;
+	left: -15px;
 }
