@@ -20,6 +20,7 @@ input {
 	margin: 0px auto;
 	border-radius: 60px;
 	font-size: 32px;
+	color:  #fff900;
 	line-height: inherit;
 	padding: 5px;
 	border: 1px solid #800909;
@@ -98,6 +99,8 @@ h2 {
 	background: #fff900;
 	margin: 0px auto;
 	border-radius: 60px;
+	box-shadow: brown 0px 6px 4px, 
+	inset brown 0px 4px 6px;
 	margin-top: -350px;
 	position: relative;
 	left: 150px;
@@ -109,6 +112,8 @@ h2 {
 	background: #800909;
 	margin: 0px auto;
 	border-radius: 60px;
+	box-shadow: brown 0px 6px 4px, 
+	inset brown 0px 4px 6px;
 	margin-top: -100px;
 	position: relative;
 	left: 135px;
@@ -121,6 +126,8 @@ h2 {
 	margin: 0px auto;
 	margin-top: -95px;
 	border-radius: 60px;
+	box-shadow: brown 0px 6px 4px, 
+	inset brown 0px 4px 6px;
 	position: relative;
 	right: 150px;
 
@@ -133,6 +140,8 @@ h2 {
 	margin: 0px auto;
 	margin-top: -100px;
 	border-radius: 60px;
+	box-shadow: brown 0px 6px 4px, 
+	inset brown 0px 4px 6px;
 	position: relative;
 	right: 165px;
 
@@ -168,6 +177,8 @@ h2 {
 	border-bottom: 60px solid #fff900;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
+	box-shadow: brown 0px 6px 4px, 
+	inset brown 0px 4px 6px;
 	margin: 0px auto;
 	margin-top: 60px;
 	position: relative;
@@ -183,7 +194,7 @@ h2 {
 	margin: 0px auto;
 	margin-top: -60px;
 	position: relative;
-	left: -10px;
+	left: -9px;
 }
 
 #tooth2 {
@@ -231,7 +242,7 @@ h2 {
 	margin: 0px auto;
 	margin-top: -60px;
 	position: relative;
-	left: 147px;
+	left: 148px;
 }
 
 #tooth4 {
@@ -256,5 +267,5 @@ h2 {
 	margin: 0px auto;
 	margin-top: -40px;
 	position: relative;
-	left: -20px;
+	left: -18px;
 }
