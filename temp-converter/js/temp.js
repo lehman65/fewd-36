@@ -25,7 +25,10 @@ function calcCtoF(event) {
   }
 }
 
+
 function calcCelciusToFahrenheit(tempC) {
   var tempF = tempC * 9/5 + 32;
     return  Math.round(tempF);
 }
+
+
