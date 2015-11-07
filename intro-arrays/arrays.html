@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Arrays Intro</title>
+</head>
+<h1>Arrays Intro</h1>
+
+<script>
+
+var h1 = document.querySelector("h1");
+
+h1["textContent"] = "Wednesday Nov 4";
+
+var pies = ["peach", "chocolate", "pecan", "chess", "pumpkin", "coconut"];
+
+var hotel = {
+name: "Chateau Fewdo ",	
+vacancy: true, 
+price: "$264 ",
+rating: 4.2,
+location: ["123 Main St", " Main at Howard", " San Francisco", " CA"]
+};
+
+h1.textContent = hotel["name"] + " | Price: " + hotel["price"]
+ + " | Rating: " + hotel["rating"] + " | Location: " + hotel["location"];
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<ul>
+    <li class="red">Red</li>
+    <li class="green">Green</li>
+    <li class="blue">Blue</li>
+</ul>
+
+<script>
+
+var red = document.querySelector(".red");
+var green = document.querySelector(".green");
+var blue = document.querySelector(".blue");
+
+red.addEventListener("click", sayTheColor);
+green.addEventListener("click", sayTheColor);
+blue.addEventListener("click", sayTheColor);
+
+
+function sayTheColor(event) {
+    console.log(event.target);
+    console.log(event.target.textContent);
+}
+
+</script>

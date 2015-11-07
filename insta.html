@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create element</title>
+	<style>
+display: block;
+margin: 5px;
+	</style>
+</head>
+<body>
+
+	
+	<label>Name
+	<input class="username">
+	</label>
+
+	<label>Comment
+	<input class="comment">
+	</label>
+	<button>Post</button>
+<ul>
+	<li>blue</li>
+	<li>green</li>
+	<li>red</li>
+</ul>
+
+
+
+<script>
+
+var list = document.querySelector("ul");
+var button = document.querySelector("button");
+var username = document.querySelector(".username");
+var comment = document.querySelector(".comment");
+console.log(username);
+console.log(comment);
+
+button.addEventListener("click", addComment);
+comment.addEventListener("keyup", addComment);
+
+
+function addComment(event) {
+	console.log(event);
+	var key = event.keyCode;
+	if (key && key != 13) {
+		return;}
+	var nameValue = username.value;
+	var commentValue = comment.value;
+
+	var newItem = document.createElement("LI");
+	newItem.textContent = nameValue + ": " + commentValue;
+
+	
+	
+	
+	list.appendChild(newItem);
+}
+
+
+</script>
+
+</body>
+</html>

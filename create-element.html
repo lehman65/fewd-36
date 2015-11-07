@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create element</title>
+</head>
+<body>
+
+	<button>Color Me</button>
+	
+
+<ul>
+	<li>blue</li>
+	<li>green</li>
+	<li>red</li>
+</ul>
+
+
+
+<script>
+// structure
+var list = document.querySelector("ul");
+var button = document.querySelector("button");
+
+button.addEventListener("click", colorMe);
+
+//event handler function
+function colorMe() {
+	var color = prompt("what color please?")
+	//create the element
+	var newItem = document.createElement("LI");
+	newItem.textContent = color;
+	newItem.className = color;
+	//decorate the element
+	
+	//insert the element
+	list.appendChild(newItem);
+}
+
+
+</script>
+
+</body>
+</html>
