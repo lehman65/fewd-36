@@ -4,22 +4,29 @@
 	font-size: 16px;	
 }
 
+body{
+	background: #F2EEF1;
+}
+
 header {
 	background-color: #65BD54;
 	font-size: 48px;
+	font-family: 'Jaldi', sans-serif;
 	height: 75px;
 	width: 100%;
 	text-align: center;
-	margin-top: 20px;
+	margin-bottom: 20px;
 
 }
 
 .container {
+	
 	text-align: center;
 	width: 800px;
-	height: 300px;
+	height: 400px;
 	background-color: #CAC8CB;
-	margin: 20px;
+	margin-top: 20px;
+	margin: 0 auto;
 	border: solid #7A787B;
 	border-radius: 5px;
 }
@@ -29,6 +36,7 @@ form {
 }
 
 input {
+
 	width: 250px;
 	height: 50px;
 	padding: 5px;
