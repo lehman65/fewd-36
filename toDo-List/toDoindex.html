@@ -20,9 +20,11 @@
 	<button>Add</button>
 	</form>
 
-	<ul></ul>
+	<ul>
+		<!--<label><input type="checkbox" id="cbox1" value="first_checkbox"></label><br>-->
+	</ul>
 	</div>
-<script>
+<!--<script>
 jQuery(function($){
    $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
 });
@@ -30,7 +32,38 @@ jQuery(function($){
 jQuery(function($){
    $("#product").mask("99/99/9999",{completed:function(){alert("You typed the following: "+this.val());}});
 });
-</script>
+</script>-->
 
+<script type>
+var form = document.querySelector("form");
+var task = document.querySelector("input");
+var date = document.querySelector("date");
+var list = document.querySelector("ul");
+
+form.addEventListener("click", addTask);
+list.addEventListener("submit", showTask);
+
+var tasks = [];
+
+function addTask(e) {
+	e.preventDefault();
+tasks.push(task.value);
+form.reset();
+}
+
+function showTask(e) {
+	console.log("show");
+	tasks.forEach(lists);
+}
+
+function lists(item) {
+	//create element
+	var task1 = document.createElement("li");
+	//decorate element
+	task1.textContent = item;
+	//insert element
+	list.appendChild(task1);
+}
+</script>
 </body>
 </html>

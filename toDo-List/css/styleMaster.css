@@ -55,3 +55,8 @@ button {
 	border: solid #7A787B ;
 	border-radius: 5px;
 }
+
+ul {
+	text-align: justify;
+	margin-left: 60px;
+}
