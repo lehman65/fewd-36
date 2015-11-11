@@ -12,11 +12,11 @@
 <body>
 	<div class= "container">
 		<form>
-	<input class="input" placeholder="Task"/>
+	<input class="input" type="text" placeholder="Task">
 	<!--<input class="input" placeholder="mm/dd/yyy"/>
 	<input class="datepicker" type="text" name="date" value="" readonly />
 	<input type="text" pattern="\d{1,2}/\d{1,2}/\d{4}" class="datepicker" name="date" value="" />-->
-	<input id="date" tabindex="1" type="text" placeholder="mm/dd/yyyy">
+	<input class ="date" type="date" placeholder="mm/dd/yyyy">
 	<button>Add</button>
 	</form>
 
@@ -24,15 +24,15 @@
 		<!--<label><input type="checkbox" id="cbox1" value="first_checkbox"></label><br>-->
 	</ul>
 	</div>
-<!--<script>
-jQuery(function($){
+<script>
+/*jQuery(function($){
    $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
 });
 
 jQuery(function($){
    $("#product").mask("99/99/9999",{completed:function(){alert("You typed the following: "+this.val());}});
-});
-</script>-->
+});*/
+</script>
 
 <script type>
 var form = document.querySelector("form");
@@ -40,10 +40,13 @@ var task = document.querySelector("input");
 var date = document.querySelector("date");
 var list = document.querySelector("ul");
 
-form.addEventListener("click", addTask);
+form.addEventListener("submit", addTask,);
 list.addEventListener("submit", showTask);
+form.addEventListener("submit", addDate,);
+list.addEventListener("submit", showDate);
 
 var tasks = [];
+var dates = [];
 
 function addTask(e) {
 	e.preventDefault();
@@ -51,18 +54,39 @@ tasks.push(task.value);
 form.reset();
 }
 
-function showTask(e) {
-	console.log("show");
-	tasks.forEach(lists);
+function addDate(e) {
+	e.preventDefault();
+dates.push(date.value);
+form.reset();
 }
 
-function lists(item) {
+function showTask(e) {
+	console.log("showtasks");
+	tasks.forEach(listsTasks);
+}
+
+function showDate(e) {
+	console.log("showdates");
+	dates.forEach(listsDates);
+}
+
+
+function listsTasks(item) {
 	//create element
 	var task1 = document.createElement("li");
 	//decorate element
 	task1.textContent = item;
 	//insert element
 	list.appendChild(task1);
+}
+
+function listsDates(item) {
+	//create element
+	var date1 = document.createElement("li");
+	//decorate element
+	date1.textContent = item;
+	//insert element
+	list.appendChild(date1);
 }
 </script>
 </body>
