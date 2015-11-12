@@ -19,10 +19,53 @@
 	<li class="salmon">Salmon</li>
 	<li class="burlywood">Burlywood</li>
 	<li class="thistle">Thistle</li>
+	<li class="orange">Orange</li>
 </ul>
 
-<p>Current Color Theme is: <span>white</span></p>
+<p>Current Color Theme is: <span></span></p>
+<script>
+// Structure
+// -------------------------------------
+/*var color1 = document.querySelector(".olive");
+var color2 = document.querySelector(".skyblue");
+var color3 = document.querySelector(".salmon");
+var color4 = document.querySelector(".burlywood");
+var color5 = document.querySelector(".thistle");*/
+var lists = document.querySelector("ul");
+
+// Events
+// -------------------------------------
+/*color1.addEventListener("click", changeColor)
+color2.addEventListener("click", changeColor)
+color3.addEventListener("click", changeColor)
+color4.addEventListener("click", changeColor)
+color5.addEventListener("click", changeColor)*/
+lists.addEventListener("click", changeColor)
+// ...to do in next class!
 
 
+// Event handler functions
+// -------------------------------------
+
+function changeColor(event) {
+	console.log("changeColor");
+	console.log(event.target.tagName);
+
+if (event.target.tagName == "UL") {
+	return;
+}
+
+	var swatch = event.target;
+	var color = swatch.className;
+	var color = swatch.getAttribute("class");
+
+	var body = document.querySelector("body");
+	body.className = color;
+	//method 2
+	//body.setAttribute("class", color);
+	var name = document.querySelector("span");
+	name.textContent = color;
+}
+</script>
 </body>
 </html>

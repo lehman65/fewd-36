@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<script src="jquery.js" type="text/javascript"></script>
-<script src="jquery.maskedinput.js" type="text/javascript"></script>
+<!--<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.maskedinput.js" type="text/javascript"></script>-->
 <link href='https://fonts.googleapis.com/css?family=Jaldi:700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/styleMaster.css">
 
@@ -19,10 +19,19 @@
 	<input class ="date" type="date" placeholder="mm/dd/yyyy">
 	<button>Add</button>
 	</form>
-
 	<ul>
-		<!--<label><input type="checkbox" id="cbox1" value="first_checkbox"></label><br>-->
-	</ul>
+		<li>
+<div class="list-group">
+	
+<div class="checkbox">
+			<input name="tasksDate" class="strikethrough" value="1" type="checkbox">
+		<label for="tasksDate">find nemo</label>
+	</div>
+	
+</div>
+	</li>
+			
+</ul>
 	</div>
 <script>
 /*jQuery(function($){
@@ -36,17 +45,18 @@ jQuery(function($){
 
 <script type>
 var form = document.querySelector("form");
-var task = document.querySelector("input");
-var date = document.querySelector("date");
-var list = document.querySelector("ul");
+var task = document.querySelector(".input");
+var date = document.querySelector(".date");
+var list = document.querySelector("li");
 
-form.addEventListener("submit", addTask,);
-list.addEventListener("submit", showTask);
-form.addEventListener("submit", addDate,);
-list.addEventListener("submit", showDate);
+form.addEventListener("submit", addTask);
+task.addEventListener("submit", showTask);
+form.addEventListener("submit", addDate);
+date.addEventListener("submit", showDate);
 
 var tasks = [];
 var dates = [];
+var lists = tasks + dates;
 
 function addTask(e) {
 	e.preventDefault();
@@ -87,6 +97,22 @@ function listsDates(item) {
 	date1.textContent = item;
 	//insert element
 	list.appendChild(date1);
+}
+
+function createList(item) {
+	//step 1 create elements
+	var label = document.createElement("li");
+	
+	
+	 //step 2 decorate elements
+	 label.textContent = item.name;
+	 label.setAttribute(tasks);
+	 
+
+	//step3 insert in the dom
+	
+	label.appendChild("li");
+	
 }
 </script>
 </body>
