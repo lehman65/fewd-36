@@ -20,11 +20,19 @@ form.addEventListener("submit", enter);
 //solution to add localstorage in color-switcher pageLoad()
 function pageLoad(event)
  {
+ 	// error checking. return early if nothing saved yet
+ 		if (localStorage.getItem("receipt") == null) {
+ 			return;
+ 		}
+ 		//repop. list
 	receipt = JSON.parse(localStorage.getItem('receipt'));
+	receipt.items.forEach(createLine);
 }
 function enter(event) {
 	event.preventDefault();
+	//get the current entry val fro form, convert to number wwith parsefloat
 	var entry = parseFloat(input.value);
+	//update page
 	receipt.items.push(entry);
 	createItem(entry);
 	form.reset();
