@@ -4,11 +4,9 @@
 	font-size: 24px;
 	font-family: 'Jaldi', sans-serif;	
 }
-
 body{
 	background: #F2EEF1;
 }
-
 header {
 	background-color: #65BD54;
 	font-size: 48px;
@@ -17,72 +15,74 @@ header {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 20px;
-
 }
-
 .container {
-
-	text-align: center;
-	width: 800px;
-	height: 400px;
-	background-color: #CAC8CB;
-	margin-top: 20px;
-	margin: 0 auto;
-	border: solid #7A787B;
+	margin: auto;
+	background-color: #bdc3c7;
+	height:1500px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
 	border-radius: 5px;
+	border: 1px solid darkgray;
 }
-
-form {
-	text-align: center;
+.containers {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
 }
-
-input {
-
-	
+#text-input {
+	font-family: 'Jaldi', sans-serif;
+	height: 50px;
+	margin: 15px 5px;
+	padding-left: 10px;	
 	padding: 5px;
 	border: solid #7A787B;
 	border-radius: 5px;
-	margin-top: 40px;
-	margin-right: 20px;
+}
+
+#date-input {
+	font-family: 'Jaldi', sans-serif;
+	height: 50px;
+	margin: 15px 5px;
+	padding-left: 10px;	
+	padding: 5px;
+	border: solid #7A787B;
+	border-radius: 5px;
 }
 
 button {
-	background-color: #708DE4;
-	width: 125px;
-	height: 64px;
-	padding: 5px;
-	border: solid #7A787B ;
+	font-family: 'Jaldi', sans-serif;
+	font-size: 18px;	
+	width: 80px;
+	height: 50px;
+	border: solid #7A787B;
 	border-radius: 5px;
-}
-
-
-.checkbox {
-	list-style-type: none;
-	float: left;
-	margin-left: 200px:
-	margin-right: 200px;
-	border-left: 200px;
-}
-
-.label {
-	margin-left: 0px;
-	color: black;
-}
-
-li {
-	list-style-type: none;
-
-width: 450px;
-height: 50px;
-margin-left: 20px:
-margin-right: 20px;
-padding-left: 100px;
-
-}
-.strikethrough:checked + label {
+	margin: 15px 15px;
+	background-color: skyblue;
+	border: 1px solid darkgray;
 	
-  text-decoration:line-through;
-  list-style-type: none;
-
-
 }
+.tasks {
+	list-style-type: none;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+}
+p {
+	display: inline;
+}
+.gray {
+	color: gray;
+	font-style: italic;
+}
+input + label {
+	margin:0px 6px;
+}
+input:checked ~ label {
+	text-decoration: line-through;
+}
+
+

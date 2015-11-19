@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Color Switcher</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/color-switcher.css">
-<script src="js/color-switcher.js"></script>
+	<title>Color Switcher</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/color-switcher.css">
+	<!--<script src="js/color-switcher.js"></script>-->
 </head>
 <body>
 
-<h1>Color Theme Switcher</h1>
+	<h1>Color Theme Switcher</h1>
 
-<p>Click on one of the swatches to change the theme for this page.</p>
+	<p>Click on one of the swatches to change the theme for this page.</p>
 
-<ul>
-	<li class="olive">Olive</li>
-	<li class="skyblue">Skyblue</li>
-	<li class="salmon">Salmon</li>
-	<li class="burlywood">Burlywood</li>
-	<li class="thistle">Thistle</li>
-	<li class="orange">Orange</li>
-</ul>
+	<ul>
+		<li class="olive">Olive</li>
+		<li class="skyblue">Skyblue</li>
+		<li class="salmon">Salmon</li>
+		<li class="burlywood">Burlywood</li>
+		<li class="thistle">Thistle</li>
+		<li class="orange">Orange</li>
+	</ul>
 
-<p>Current Color Theme is: <span></span></p>
-<script>
+	<p>Current Color Theme is: <span></span></p>
+	<script>
 // Structure
 // -------------------------------------
 /*var color1 = document.querySelector(".olive");
@@ -32,7 +32,10 @@ var color3 = document.querySelector(".salmon");
 var color4 = document.querySelector(".burlywood");
 var color5 = document.querySelector(".thistle");*/
 var lists = document.querySelector("ul");
-
+//setup
+var theme = {
+	'color' : 'white'
+}
 // Events
 // -------------------------------------
 /*color1.addEventListener("click", changeColor)
@@ -40,32 +43,70 @@ color2.addEventListener("click", changeColor)
 color3.addEventListener("click", changeColor)
 color4.addEventListener("click", changeColor)
 color5.addEventListener("click", changeColor)*/
-lists.addEventListener("click", changeColor)
+//when the window loads...
+window.addEventListener("load", pageLoad);
+lists.addEventListener("click", handleClick);
 // ...to do in next class!
 
 
 // Event handler functions
 // -------------------------------------
-
-function changeColor(event) {
+//gets data from page
+function handleClick(event) {
 	console.log("changeColor");
 	console.log(event.target.tagName);
 
-if (event.target.tagName == "UL") {
-	return;
+	if (event.target.tagName == "UL") {
+		return;
+	}
+	var swatchElement = event.target;
+	var swatchColor = swatchElement.getAttribute("class");
+	theme.color = swatchColor;
+	changeColor(theme);
+//get the theme object out of storage on page refresh
+localStorage.setItem('theme', JSON.stringify(theme));
 }
 
-	var swatch = event.target;
-	var color = swatch.className;
-	var color = swatch.getAttribute("class");
+function pageLoad(event) {
+	if (localStorage.getItem('theme') == null) {
+		changeColor(theme);
+	}else{
+		theme = JSON.parse(localStorage.getItem('theme'));
+		changeColor(theme);
+	}
+}
 
+
+
+
+//update page functions
+function changeColor(theme) {
 	var body = document.querySelector("body");
-	body.className = color;
+	body.className = theme.color;
 	//method 2
 	//body.setAttribute("class", color);
 	var name = document.querySelector("span");
-	name.textContent = color;
+	name.textContent = theme.color;
 }
+
+
+
+
+/*var theme = {
+	color : "orange"
+}
+localStorage.getItem( "theme", JSON.stringify(theme));
+var savedTheme = JSON.parse(localStorage.getItem("theme"));
+
+var task = {
+	name: "exercise",
+	date: undefined,
+	completed: false
+}*/
+
+
+
+
 </script>
 </body>
 </html>

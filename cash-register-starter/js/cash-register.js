@@ -2,19 +2,50 @@
 // ------------------------------------------------
 var form    = document.querySelector("form");
 var input   = document.querySelector("input");
-var entries = document.querySelector(".entries");
+var entry = document.querySelector(".entries");
 var total   = document.querySelector(".total");
 
 
 // Setup
 // ------------------------------------------------
 var totalValue = 0;
-var inputVal = input.value;
+//var inputVal = input.value;
+var receipt = {
+	"items": []
 
+}
+window.addEventListener("load", pageLoad);
+form.addEventListener("submit", enter);
+//event handler functions
+//solution to add localstorage in color-switcher pageLoad()
+function pageLoad(event)
+ {
+	receipt = JSON.parse(localStorage.getItem('receipt'));
+}
+function enter(event) {
+	event.preventDefault();
+	var entry = parseFloat(input.value);
+	receipt.items.push(entry);
+	createItem(entry);
+	form.reset();
+	localStorage.setItem('receipt', JSON.stringify(receipt));
+}
+
+function createItem(item) {
+	var li = document.createElement("li");
+	entry.appendChild(li);
+	//set the text content for the 
+	li.textContent = item;
+	//update the value for the the total
+	totalValue = totalValue + item;
+	total.textContent = totalValue;
+	input.value = "";
+
+}
 // Events
 // ------------------------------------------------
-form.addEventListener("submit");
-console.log(item);
+/*form.addEventListener("submit");
+console.log(items);
 function enter(event) {
 event.preventDefault()
 }
@@ -25,7 +56,7 @@ var inputVal = input.value;
 //var entriesVal = entries.value;
 var newItem = document.createElement("form");
 	newItem.textContent = total;
-	form.appendChild(newItem);
+	form.appendChild(newItem);*
 	}
 //.className
 //.textcontent
@@ -36,4 +67,4 @@ var newItem = document.createElement("form");
 
 //called on document, takes 1 arg., arg. is type of element
 //passed as a string in CAPS. ex . document.createElement("LI");
-//.addEventListener()
+//.addEventListener()*/
