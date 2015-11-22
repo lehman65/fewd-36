@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+body {
+	background: #B6B6B6;
+	font-family: helvetica;
+	margin: 10px;
+}
+
+header {
+	font-size: 72px;
+	text-align: center;
+
+	margin-bottom: 40px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+
+}
+
+p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#lower {
+	margin-left: 60px;
+}
+img {
+
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto 
+}
+
+
+area.mapping {
+	background: red;
+}
+
+
+/*
+ul {
+	list-style-type: none;
+	-webkit-transform: translate(0px, 30px) rotate(-90deg); 
+
+}
+
+#upper {
+	text-align: center;
+	-webkit-transform: rotate(180deg);
+	   -webkit-transition: all 1s ease-in-out;
+	   transform: rotate(180deg);
+	     transition: all 1s ease-in-out;
+	
+
+}
+	transform: rotate(6deg);
+}
+li.u2 {
+	transform: rotate(12deg);
+}
+li.u3 {
+	transform: rotate(18deg);
+}
+
+li.u16 {
+
+}
+
+#lower {
+	text-align: center;
+	transform: rotate(180deg);
+	  transition: all 1s ease-in-out;
+	
+}
+
+#img_container {
+    position: relative;
+    display:inline-block;
+    text-align:center;
+    border:1px solid red;
+    }
+
+.button {
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    width:100px;
+    height:30px;
+}
+
+/* Arc movement 
+
+.wrapper {
+	width: 500px;
+	margin: 300px 0 0;
+	transition: all 1s;
+	transform-origin: 50% 50%;
+}
+.inner {
+	display: inline-block;
+	padding: 1em;
+	transition: transform 1s;
+	background: lime;
+}
+html:hover .wrapper {
+	transform: rotate(180deg);
+}
+html:hover .inner {
+	transform: rotate(-180deg);
+}
