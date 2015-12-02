@@ -14,6 +14,7 @@ body {
 header {
 	font-size: 48px;
 	text-align: center;
+	margin-top: 60px;
 	margin-bottom: 2.5px;
 }
 
@@ -21,22 +22,23 @@ h1 {
 	text-align: left;
 	margin-left: 170px;
 	margin-right: 0px;
-	margin-top: 20px; 
+	margin-top: 40px; 
 	margin-bottom: 10px;
 }
 
 h2 {
 	text-align: center;
-	margin-bottom: 24px;
+	margin-bottom: 60px;
 }
 /*ua la row*/
 span {
 	display: flex;
 	flex-direction: row;
+	margin-top: 60px;
 }
 
 .ua {
-	flex: 2 0 0;
+	flex: 4 0 0;
 
 }
 
@@ -53,22 +55,22 @@ section {
 
 #upper {
 	display: flex;
-	margin-right: auto; 
+	 margin-right: 200px;
 }
 
 #lower {
 	display: flex;
-	margin-left: auto; 
+	margin-left: 100px;
 }
 
 
 #boundList {
 	display: inline-block;
-	margin-left: 40px;
+	margin-left: 200px;
 }
 
 a {
-	margin-left: 40px;
+	margin-left: 200px;
 }
 
 li {
