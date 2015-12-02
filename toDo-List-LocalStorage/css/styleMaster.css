@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	font-family: 'Jaldi', sans-serif;	
+}
+body{
+	background: #F2EEF1;
+}
+header {
+	background-color: #65BD54;
+	font-size: 48px;
+	font-family: 'Jaldi', sans-serif;
+	height: 75px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.container {
+	margin: auto;
+	background-color: #bdc3c7;
+	height:1500px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	border: 1px solid darkgray;
+}
+.containers {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+#text-input {
+	font-family: 'Jaldi', sans-serif;
+	height: 50px;
+	margin: 15px 5px;
+	padding-left: 10px;	
+	padding: 5px;
+	border: solid #7A787B;
+	border-radius: 5px;
+}
+
+#date-input {
+	font-family: 'Jaldi', sans-serif;
+	height: 50px;
+	margin: 15px 5px;
+	padding-left: 10px;	
+	padding: 5px;
+	border: solid #7A787B;
+	border-radius: 5px;
+}
+
+button {
+	font-family: 'Jaldi', sans-serif;
+	font-size: 18px;	
+	width: 80px;
+	height: 50px;
+	border: solid #7A787B;
+	border-radius: 5px;
+	margin: 15px 15px;
+	background-color: skyblue;
+	border: 1px solid darkgray;
+	
+}
+.tasks {
+	list-style-type: none;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+}
+p {
+	display: inline;
+}
+.gray {
+	color: gray;
+	font-style: italic;
+}
+input + label {
+	margin:0px 6px;
+}
+input:checked ~ label {
+	text-decoration: line-through;
+}
+
+

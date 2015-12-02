@@ -1,0 +1,136 @@
+/*flexbox reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #B6B6B6;
+	font-family: helvetica;
+	margin: 10px;
+}
+
+header {
+	font-size: 48px;
+	text-align: center;
+	margin-bottom: 2.5px;
+}
+
+h1 {
+	text-align: left;
+	margin-left: 170px;
+	margin-right: 0px;
+	margin-top: 20px; 
+	margin-bottom: 10px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 24px;
+}
+/*ua la row*/
+span {
+	display: flex;
+	flex-direction: row;
+}
+
+.ua {
+	flex: 2 0 0;
+
+}
+
+.la {
+	flex: 1.5 0 0;
+}
+/*imagemap*/
+section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#upper {
+	display: flex;
+	margin-right: auto; 
+}
+
+#lower {
+	display: flex;
+	margin-left: auto; 
+}
+
+
+#boundList {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+a {
+	margin-left: 40px;
+}
+
+li {
+	font-size: 18px;
+	display: inline;
+	float: left;
+	width: 25%;
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: #EEEEEE;
+}
+
+li.selected {
+	background-color: #EEEEEE;
+	text-shadow: 0px 1px 1px #4d4d4d;
+}
+
+
+
+/*cool button on hover effects I decided not to use, but want to keep
+
+button {
+	-webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  -webkit-transition: All 0.5s ease;
+	  -moz-transition: All 0.5s ease;
+	  -o-transition: All 0.5s ease;
+	  -ms-transition: All 0.5s ease;
+	  transition: All 0.5s ease;
+	font-size: 15px;
+	}*/
+
+/*button:hover {
+  background-color: #ff3434;
+}
+*/
+
+/* Arc movement effects I want to keep 
+
+.wrapper {
+	width: 500px;
+	margin: 300px 0 0;
+	transition: all 1s;
+	transform-origin: 50% 50%;
+}
+.inner {
+	display: inline-block;
+	padding: 1em;
+	transition: transform 1s;
+	background: lime;
+}
+html:hover .wrapper {
+	transform: rotate(180deg);
+}
+html:hover .inner {
+	transform: rotate(-180deg);
+}

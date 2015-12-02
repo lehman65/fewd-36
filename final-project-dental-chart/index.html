@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dental Chart</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/dentalStyle.css" />
+	<link href = "img/favicon.ico" rel="icon" type="image/ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+	<script type="text/javascript" src="js/dental.js"></script>
+</head>
+
+<header>Dental Chart</header>
+
+<body>
+	<h2>International Tooth Chart Numbering with Names Of Individual Teeth</h2>
+	
+	<ul id="boundList"></ul>
+	<a href="#" id="clearAll">clear all</a>
+	<div style="clear:both;"></div>
+
+	<span>
+		<div class="ua">
+			<h1>Upper Arch</h1>
+		</div>
+		<div class="la">
+			<h1>Lower Arch</h1>
+		</div>
+	</span>
+
+	<section>
+		<div id="upper">		
+			<img id="upper" src="img/smallUpperNum.jpg" usemap="#upper">
+			<map name="upper">
+				<area href="#" state="buccal/cheek" class="selected" title="buccal surface/cheek" shape="poly" coords="183, 6, 83, 3, 59, 40, 20, 124, 5, 183, 9, 248, 23, 229, 32, 195, 42, 171, 55, 138, 86, 79, 108, 76, 113, 47, 145, 37">
+				<area href="#" state="buccal/cheek" class="selected" title="buccal surface/cheek" shape="poly" coords="344, 9, 411, 70, 450, 122, 475, 164, 495, 219, 505, 171, 501, 107, 469, 68, 414, 17, 364, 0">
+				<area href="#" state="lingual" class="selected" title="lingual/maxillary/palatal" shape="poly" coords="184, 97, 217, 83, 283, 84, 321, 99, 362, 145, 383, 182, 395, 224, 403, 304, 417, 367, 416, 423, 334, 403, 258, 421, 180, 396, 93, 419, 100, 362, 112, 322, 115, 292, 127, 252, 125, 211, 141, 162, 156, 134">
+				<area href="#" state="left 3rd molar/wisdom tooth" class="selected" title="16 - 3d molar/wisdom tooth" shape="poly" coords="460, 369, 444, 366, 430, 380, 431, 397, 438, 406, 449, 415, 473, 413, 485, 408, 496, 392, 497, 378, 492, 361">
+				<area href="#" state="left 2nd molar/12 year molar" class="selected" title="15 - 2nd molar/12 year molar" shape="poly" coords="434, 299, 460, 294, 477, 284, 492, 290, 496, 305, 495, 325, 493, 343, 474, 355, 460, 360, 435, 353, 425, 334, 423, 312">
+				<area href="#" state="left 1st molar/6 year molar" class="selected" title="14 -1st molar/6 year molar" shape="poly" coords="407, 241, 421, 224, 467, 209, 479, 224, 481, 241, 486, 255, 480, 271, 457, 284, 434, 286, 425, 288, 411, 267">
+				<area  href="#" state="left 2nd bicuspid/premolar" class="selected" title="13 - second bicuspid/premolar" shape="poly" coords="402, 181, 445, 161, 458, 167, 464, 176, 462, 194, 456, 202, 417, 215, 402, 203, 399, 190">
+				<area href="#" state="left 1st bicuspid/premolar" class="selected" title="12 - first bicuspid/premolar"  shape="poly" coords="385, 134, 409, 116, 424, 119, 432, 132, 434, 149, 432, 154, 415, 164, 405, 167, 386, 163, 379, 150">
+				<area href="#" state="left cuspid/canine/eye tooth" class="selected" title="11 - cuspid/canine/eye tooth" shape="poly" coords="370, 69, 382, 67, 395, 72, 400, 94, 400, 107, 383, 123, 363, 125, 356, 108, 354, 95">
+				<area href="#" state="left lateral incisor" class="selected" title="10 - lateral incisor"  shape="poly" coords="331, 25, 344, 27, 368, 52, 346, 88, 330, 89, 321, 71">
+				<area href="#" state="left central incisor" class="selected" title="9 - central incisor/left" shape="poly" coords="269, 10, 300, 11, 323, 21, 313, 60, 293, 74, 276, 66, 266, 46">
+				<area href="#" state="right central incisor" class="selected" title="8 - central incisor/right" shape="poly" coords="204, 16, 254, 10, 256, 41, 245, 68, 234, 72, 212, 53">
+				<area href="#" state="right lateral incisor" class="selected" title="7 - lateral incisor" shape="poly" coords="158, 43, 165, 33, 190, 19, 196, 30, 203, 71, 197, 80, 183, 79">
+				<area href="#" state="right cuspid/canine/eye tooth" class="selected" title="6 - cuspid/canine/eye tooth" shape="poly" coords="118, 88, 124, 67, 132, 55, 152, 52, 167, 84, 166, 107, 155, 114, 131, 105">
+				<area href="#" state="right 1st bicuspid/premolar" class="selected" title="5 - 1st bicuspid/premolar" shape="poly" coords="78, 112, 106, 98, 136, 124, 136, 139, 114, 153, 79, 133">
+				<area href="#" state="right 2nd bicuspid/premolar" class="selected" title="4 - 2nd bicuspid/premolar" shape="poly" coords="57, 161, 77, 147, 110, 160, 119, 180, 103, 197, 75, 191, 61, 183">
+				<area href="#" state="right 1st molar/6 year molar" class="selected" title="3 -1st molar/6 year molar" shape="poly" coords="57, 195, 99, 209, 109, 223, 111, 234, 104, 247, 104, 259, 96, 271, 86, 279, 45, 263, 33, 245, 43, 226, 36, 215">
+				<area href="#" state="right 2nd molar/12 year molar" class="selected" title="2 - 2nd molar/12 year molar"  shape="poly" coords="31, 273, 64, 277, 82, 292, 86, 316, 75, 339, 63, 346, 32, 338, 20, 327, 15, 291">
+				<area href="#" state="right 3rd molar/wisdom tooth" class="selected" title="1 - 3rd molar/wisdom tooth" shape="poly" coords="23, 345, 71, 360, 82, 381, 65, 405, 36, 405, 10, 397, 9, 363">
+			</map>
+		</div>
+		<div id="lower">
+			<img id="lower" src="img/smallJawNum.jpg" alt="lower" usemap="#lower">
+			<map name="lower">
+				<area href="#" state="right 3rd molar/wisdom tooth" class="selected" title="32 - 3rd molar/wisdom tooth" shape="poly" coords="165, 219, 177, 214, 187, 219, 189, 227, 191, 238, 184, 245, 173, 247, 166, 236">
+				<area href="#" state="right 2nd molar/12 year molar" class="selected" title="31 - right 2nd molar/12 year molar" shape="poly" coords="180, 258, 195, 251, 201, 258, 204, 270, 205, 282, 192, 287, 184, 287, 174, 277">
+				<area href="#" state="right 1st molar/6 year molar" class="selected" title="30 - right 1st molar/6 year molar" shape="poly" coords="186, 307, 195, 297, 212, 296, 215, 309, 218, 324, 208, 333, 195, 331, 189, 321">
+				<area href="#" state="right 2nd bicuspid/premolar" class="selected" title="29 - right 2nd bicuspid/premolar" shape="poly" coords="209, 340, 219, 337, 227, 344, 226, 357, 218, 361, 206, 354">
+				<area href="#" state="right 1st bicuspid/premolar" class="selected" title="28 - right 1st bicuspid/premolar" shape="poly" coords="235, 363, 220, 372, 222, 384, 231, 386, 242, 374">
+				<area href="#" state="right cuspid/canine/eye tooth" class="selected" title="27 - right cuspid/canine/eye tooth" shape="poly" coords="251, 382, 236, 396, 242, 412, 253, 410">
+				<area href="#" state="right lateral incisor" class="selected" title="26 - right lateral incisor" shape="poly" coords="268, 388, 259, 418, 273, 421, 275, 399">
+				<area href="#" state="right central incisor" class="selected" title="25 - right central incisor" shape="poly" coords="287, 392, 280, 423, 295, 422">
+				<area href="#" state="left central incisor" class="selected" title="24 - left central incisor" shape="poly" coords="303, 390, 300, 421, 313, 421">
+				<area href="#" state="left lateral incisor" class="selected" title="23 - left lateral incisor" shape="poly" coords="320, 391, 320, 416, 334, 413">
+				<area href="#" state="left cuspid/canine/eye tooth" class="selected" title="22 - left cuspid/canine/eye tooth" shape="poly" coords="338, 383, 339, 400, 343, 411, 350, 409, 356, 395">
+				<area href="#" state="left 1st bicuspid/premolar" class="selected" title="21 - left 1st bicuspid/premolar" shape="poly" coords="353, 374, 359, 366, 372, 373, 373, 382, 365, 388, 357, 384">
+				<area href="#" state="left 2nd bicuspid/premolar" class="selected" title="20 - left 2nd bicuspid/premolar" shape="poly" coords="365, 348, 372, 339, 383, 341, 387, 349, 388, 356, 384, 362, 376, 361, 371, 358">
+				<area href="#" state="left 1st molar/6 year molar" class="selected" title="19 - left 1st molar/6 year molar" shape="poly" coords="381, 302, 391, 299, 406, 304, 411, 313, 408, 326, 397, 337, 384, 333, 375, 321">
+				<area href="#" state="left 2nd molar/12 year molar" class="selected" title="18 - left 2nd molar/12 year molar" shape="poly" coords="393, 261, 405, 256, 421, 263, 419, 276, 416, 286, 408, 290, 397, 289, 390, 284, 386, 278">
+				<area href="#" state="left 3rd molar/wisdom tooth" class="selected" title="17 - left 3rd molar/ wisdom tooth" shape="poly" coords="413, 216, 425, 213, 432, 224, 431, 239, 422, 249, 412, 245, 404, 239, 405, 230">
+				<area href="#" state="buccal/cheek" class="selected" title="buccal/cheek" shape="poly" coords="464, 253, 367, 418, 343, 425, 308, 435, 281, 433, 248, 428, 235, 418, 218, 398, 184, 345, 167, 312, 133, 223, 95, 245, 202, 455, 252, 478, 334, 476, 388, 463, 515, 248">
+				<area href="#" state="lingual" class="selected"  title="lingual/mandibular" shape="poly" coords="201, 225, 214, 272, 232, 326, 250, 366, 270, 375, 303, 374, 331, 366, 342, 351, 356, 319, 365, 283, 378, 234, 383, 219">
+			</map>
+		</div>
+	</section>
+</body>
+</html>
